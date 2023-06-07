@@ -549,7 +549,7 @@ let g:coc_global_extensions = [
 	\ 'coc-sourcekit',
 	\ 'coc-stylelint',
 	\ 'coc-syntax',
-	\ 'https://github.com/theniceboy/coc-tailwindcss',
+	\ 'coc-tailwindcss',
 	\ 'coc-tasks',
 	\ 'coc-translator',
 	\ 'coc-tsserver',
