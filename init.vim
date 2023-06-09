@@ -553,7 +553,7 @@ let g:coc_global_extensions = [
 	\ 'coc-tasks',
 	\ 'coc-translator',
 	\ 'coc-tsserver',
-	\ 'coc-vetur',
+	\ 'coc-volar',
 	\ 'coc-vimlsp',
 	\ 'coc-yaml',
 	\ 'coc-yank']
