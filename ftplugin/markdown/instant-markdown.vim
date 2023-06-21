@@ -1,8 +1,4 @@
 " # Configuration
-
-let g:instant_markdown_browser = "/Applications/Google Chrome.app"
-let g:instant_markdown_port = 108090
-
 if !exists('g:instant_markdown_slow')
     let g:instant_markdown_slow = 0
 endif
@@ -43,17 +39,13 @@ if !exists('g:instant_markdown_autoscroll')
 endif
 
 if !exists('g:instant_markdown_port')
-    let g:instant_markdown_port = 18090
+    let g:instant_markdown_port = 8090
 endif
 
 if !exists('g:instant_markdown_python')
     let g:instant_markdown_python = 0
 endif
 
-if !existis('g:instant_markdown_browser')
-		"let g:instant_markdown_browser = "Google Chrome"
-		let g:instant_markdown_browser = "/Applications/Google Chrome.app"
-endif
 
 " # Utility Functions
 let s:ROOT_DIR = fnamemodify(resolve(expand('<sfile>:p')), ':h')
@@ -108,7 +100,6 @@ function! s:refreshView()
                 \ s:bufGetLines(bufnr))
 endfu
 
-
 function! s:startDaemon(initialMDLines)
     let env = ''
     let argv = ''
@@ -130,8 +121,7 @@ function! s:startDaemon(initialMDLines)
         endif
     endif
     if exists('g:instant_markdown_browser')
-			let g:instant_markdown_browser = "/Applications/Google Chrome.app"
-      "  let argv .= " --browser '".g:instant_markdown_browser."'"
+        let argv .= " --browser '".g:instant_markdown_browser."'"
     endif
     let argv .= ' --port '.g:instant_markdown_port
 
