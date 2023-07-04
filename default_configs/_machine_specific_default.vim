@@ -2,10 +2,10 @@
 
 let g:snips_author = 'David Chen'
 
-let g:python_host_prog='/usr/bin/python2'
+" let g:python_host_prog='/usr/bin/python2'
 let g:python3_host_prog='/usr/local/bin/python3'
 
-" let g:mkdp_browser = 'chromium'
+let g:mkdp_browser = 'Google Chrome'
 " let g:mkdp_browserfunc = 'open '
 
 let g:flutter_default_device = 'iPhone\ 11\ Pro'
